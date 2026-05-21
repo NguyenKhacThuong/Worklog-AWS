@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 11 – Advanced Automation & GitOps"
 date: 2026-06-29
 draft: false

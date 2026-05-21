@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 02 – Networking & Compute Fundamentals"
 date: 2026-04-27
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 09 – Serverless & Event-Driven Architecture"
 date: 2026-06-15
 draft: false

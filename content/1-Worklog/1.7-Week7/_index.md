@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 07 – Security Hardening"
 date: 2026-06-01
 draft: false

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 05 – Automation, IaC and CI/CD"
 date: 2026-05-18
 draft: false
@@ -35,3 +35,4 @@ chapter: false
 ## Notes
 
 * Reference: https://cloudjourney.awsstudygroup.com/
+

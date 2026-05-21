@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 04 – Scaling & Content Delivery"
 date: 2026-05-11
 draft: false

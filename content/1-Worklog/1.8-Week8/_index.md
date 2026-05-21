@@ -1,4 +1,4 @@
----
+﻿---
 title: "Week 08 – Networking & Connectivity"
 date: 2026-06-08
 draft: false
