@@ -1,0 +1,12 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Fix all home/logo links to use correct base path
+  var baseURL = "https://nguyenkhacthuong.github.io/Worklog-AWS/";
+  document.querySelectorAll('a[href="https://nguyenkhacthuong.github.io/"]').forEach(function(el) {
+    el.href = baseURL;
+  });
+  document.querySelectorAll('a[href="/"]').forEach(function(el) {
+    el.href = baseURL;
+  });
+});
+</script>
