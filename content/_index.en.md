@@ -6,7 +6,7 @@ chapter: false
 ---
 
 <div style="display: flex; gap: 15px; align-items: center;">
-  <div style="flex-shrink: 0; width: 200px;">
+  <div style="flex-shrink: 0; width: 300px;">
     <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 100%; height: auto; border-radius: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div>
