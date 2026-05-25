@@ -5,9 +5,9 @@ weight: 1
 chapter: false
 ---
 
-<div style="display: flex; gap: 30px; align-items: flex-start;">
-  <div style="flex-shrink: 0;">
-    <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<div style="display: flex; gap: 15px; align-items: center;">
+  <div style="flex-shrink: 0; width: 120px;">
+    <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div>
     <h3>Student Information:</h3>
