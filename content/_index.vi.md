@@ -8,7 +8,7 @@ chapter: false
 # Báo cáo thực tập
 
 <div style="display: flex; gap: 30px; align-items: center;">
-  <div style="flex-shrink: 0; width: 300px;">
+  <div style="flex-shrink: 0; width: 240px;">
     <img src="/images/avarta.jpg" alt="Ảnh đại diện của bạn" style="width: 100%; height: auto; border-radius: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div>
