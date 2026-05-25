@@ -1,6 +1,6 @@
 ---
 title: "Tuần 05 – Tự động hoá, IaC và CI/CD"
-date: 2026-05-18
+date: 2026-04-20
 draft: false
 weight: 5
 chapter: false

@@ -1,6 +1,6 @@
 ﻿---
 title: "Week 02 – Networking & Compute Fundamentals"
-date: 2026-04-27
+date: 2026-04-20
 draft: false
 weight: 2
 chapter: false

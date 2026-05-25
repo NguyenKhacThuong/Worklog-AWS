@@ -1,6 +1,6 @@
 ---
 title: "Tuần 04 – Scale & Phân phối nội dung"
-date: 2026-05-11
+date: 2026-04-20
 draft: false
 weight: 4
 chapter: false

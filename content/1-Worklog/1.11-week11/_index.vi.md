@@ -1,6 +1,6 @@
 ---
 title: "Tuần 11 – Tự động hoá nâng cao & GitOps"
-date: 2026-06-29
+date: 2026-04-20
 draft: false
 weight: 11
 chapter: false

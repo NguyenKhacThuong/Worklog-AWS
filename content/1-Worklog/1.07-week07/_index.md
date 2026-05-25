@@ -1,6 +1,6 @@
 ﻿---
 title: "Week 07 – Security Hardening"
-date: 2026-06-01
+date: 2026-04-20
 draft: false
 weight: 7
 chapter: false

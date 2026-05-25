@@ -1,6 +1,6 @@
 ﻿---
 title: "Week 06 – Observability & Monitoring"
-date: 2026-05-20
+date: 2026-04-20
 draft: false
 weight: 6
 chapter: false

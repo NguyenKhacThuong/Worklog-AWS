@@ -1,6 +1,6 @@
 ---
 title: "Tuần 06 – Quan sát & Giám sát"
-date: 2026-05-25
+date: 2026-04-20
 draft: false
 weight: 6
 chapter: false

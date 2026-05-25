@@ -1,6 +1,6 @@
 ﻿---
 title: "Week 05 – Automation, IaC and CI/CD"
-date: 2026-05-18
+date: 2026-04-20
 draft: false
 weight: 5
 chapter: false

@@ -1,6 +1,6 @@
 ---
 title: "Tuần 02 – Nền tảng Mạng & Tính toán"
-date: 2026-04-27
+date: 2026-04-20
 draft: false
 weight: 2
 chapter: false
