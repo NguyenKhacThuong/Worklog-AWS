@@ -5,26 +5,23 @@ weight: 1
 chapter: false
 ---
 
-### Student Information:
-&emsp; **Full Name:** Nguyễn Khắc Thượng 
-
-&emsp; **Phone Number:** 0382050082
-
-&emsp; **Email:** nguyenthuong052004@gmail.com
-
-&emsp; **University:** HUTECH University of Technology
-
-&emsp; **Major:** Information Technology
-
-&emsp; **Class:** AWS082025
-
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
-
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
-
-&emsp; **Internship Duration:** From 20/04/2026 to 12/07/2026
-
-![Your profile picture](/images/avarta.jpg)
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+  <div style="flex-shrink: 0;">
+    <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 250px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div>
+    <h3>Student Information:</h3>
+    <p><strong>Full Name:</strong> Nguyễn Khắc Thượng</p>
+    <p><strong>Phone Number:</strong> 0382050082</p>
+    <p><strong>Email:</strong> nguyenthuong052004@gmail.com</p>
+    <p><strong>University:</strong> HUTECH University of Technology</p>
+    <p><strong>Major:</strong> Information Technology</p>
+    <p><strong>Class:</strong> AWS082025</p>
+    <p><strong>Internship Company:</strong> Amazon Web Services Viet Nam Company Limited</p>
+    <p><strong>Internship Position:</strong> Workforce Bootcamp - First Cloud AI Journey</p>
+    <p><strong>Internship Duration:</strong> From 20/04/2026 to 12/07/2026</p>
+  </div>
+</div>
 
 ### Report Content
 

@@ -6,26 +6,24 @@ chapter: false
 ---
 
 # Báo cáo thực tập
-### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Khắc Thượng 
 
-&emsp; **Số điện thoại:** 0382050082
-
-&emsp; **Email:** nguyenthuong052004@gmail.com
-
-&emsp; **Trường:** Đại học Công nghệ TP.HCM
-
-&emsp; **Ngành:** Công nghệ thông tin
-
-&emsp; **Lớp:** AWS082025
-
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
-
-&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
-
-&emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 12/07/2026
-
-![Ảnh đại diện của bạn](/images/avarta.jpg)
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+  <div style="flex-shrink: 0;">
+    <img src="/images/avarta.jpg" alt="Ảnh đại diện của bạn" style="width: 250px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div>
+    <h3>Thông tin sinh viên:</h3>
+    <p><strong>Họ và tên:</strong> Nguyễn Khắc Thượng</p>
+    <p><strong>Số điện thoại:</strong> 0382050082</p>
+    <p><strong>Email:</strong> nguyenthuong052004@gmail.com</p>
+    <p><strong>Trường:</strong> Đại học Công nghệ TP.HCM</p>
+    <p><strong>Ngành:</strong> Công nghệ thông tin</p>
+    <p><strong>Lớp:</strong> AWS082025</p>
+    <p><strong>Công ty thực tập:</strong> Công ty TNHH Amazon Web Services Viet Nam</p>
+    <p><strong>Vị trí thực tập:</strong> Workforce Bootcamp - First Cloud AI Journey</p>
+    <p><strong>Thời gian thực tập:</strong> Từ ngày 20/04/2026 đến ngày 12/07/2026</p>
+  </div>
+</div>
 
 
 
