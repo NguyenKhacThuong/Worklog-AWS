@@ -7,7 +7,7 @@ chapter: false
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex-shrink: 0;">
-    <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 250px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="/images/avarta.jpg" alt="Your profile picture" style="width: 180px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div>
     <h3>Student Information:</h3>
