@@ -9,7 +9,7 @@ chapter: false
 
 <div style="display: flex; gap: 15px; align-items: center;">
   <div style="flex-shrink: 0; width: 140px;">
-    <img src="/images/avarta.jpg" alt="Ảnh đại diện của bạn" style="width: 100%; height: auto; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="/images/avarta.jpg" alt="Ảnh đại diện của bạn" style="width: 100%; height: auto; border-radius: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   </div>
   <div>
     <h3>Thông tin sinh viên:</h3>
