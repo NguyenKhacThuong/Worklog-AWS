@@ -134,7 +134,11 @@ Attending **FCAJ Community Day** at the iconic Bitexco Financial Tower was an en
 
 #### Some event photos
 
-![Group photo of all FCAJ Community Day participants](Worklog-AWS/static/images/event1-3.jpg)
+![Tinh Truong presenting "Context Is Everything" to a full audience at the AWS office](/Worklog-AWS/images/event1-1.jpg)
+ 
+![Speaker presenting the session agenda covering multi-agent AI topics](/Worklog-AWS/images/event1-2.jpg)
+ 
+![Group photo of all FCAJ Community Day participants](/Worklog-AWS/images/event1-3.jpg)
 
 ---
 
