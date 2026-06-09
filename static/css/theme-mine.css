@@ -117,3 +117,31 @@ a:hover {
 #sidebar hr {
   border-color: var(--MENU-SECTION-HR-color);
 }
+
+/* Menu item highlight effect */
+#sidebar ul li.dd-item {
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+#sidebar ul li.dd-item:hover > a {
+  color: #84c767 !important;
+  font-weight: 600;
+}
+
+#sidebar ul li.dd-item:hover {
+  background: linear-gradient(90deg, rgba(132, 199, 103, 0.2) 0%, transparent 100%) !important;
+  border-left-color: #84c767;
+}
+
+#sidebar ul li.dd-item.active > a {
+  color: #84c767 !important;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(132, 199, 103, 0.5);
+  background: transparent !important;
+}
+
+#sidebar ul li.dd-item.active {
+  background: linear-gradient(90deg, rgba(132, 199, 103, 0.25) 0%, transparent 100%) !important;
+  border-left-color: #84c767 !important;
+}
