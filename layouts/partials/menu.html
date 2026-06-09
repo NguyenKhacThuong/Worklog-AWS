@@ -53,37 +53,31 @@
       <hr/>
       <ul style="list-style:none; padding:0; margin:0;">
       {{ if .Site.IsMultiLingual }}
-        <li>
-          <a class="padding">
-            <i class="fas fa-language fa-fw"></i>
-            <div class="select-style">
-              <select id="select-language" onchange="location = this.value;">
-                {{ range .Site.Languages }}
-                  {{ $lang := .Lang }}
-                  {{ $langName := .LanguageName }}
-                  {{ if eq $.Page.Lang $lang }}
-                    <option value="{{ $.Page.Permalink }}" selected>{{ $langName }}</option>
-                  {{ else }}
-                    {{ if $.Page.IsTranslated }}
-                      {{ with index $.Page.Translations 0 }}
-                        {{ if eq .Lang $lang }}
-                          <option value="{{ .Permalink }}">{{ $langName }}</option>
-                        {{ else }}
-                          <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
-                        {{ end }}
+        <li class="padding" style="display:flex; align-items:center; gap:6px; padding: 6px 16px;">
+          <i class="fas fa-language fa-fw"></i>
+          <div class="select-style" style="flex:1;">
+            <select id="select-language" onchange="location = this.value;" style="width:100%;">
+              {{ range .Site.Languages }}
+                {{ $lang := .Lang }}
+                {{ $langName := .LanguageName }}
+                {{ if eq $.Page.Lang $lang }}
+                  <option value="{{ $.Page.Permalink }}" selected>{{ $langName }}</option>
+                {{ else }}
+                  {{ if $.Page.IsTranslated }}
+                    {{ with index $.Page.Translations 0 }}
+                      {{ if eq .Lang $lang }}
+                        <option value="{{ .Permalink }}">{{ $langName }}</option>
+                      {{ else }}
+                        <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                       {{ end }}
-                    {{ else }}
-                      <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                     {{ end }}
+                  {{ else }}
+                    <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                   {{ end }}
                 {{ end }}
-              </select>
-              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
-                <g><g id="arrow-drop-down"><polygon points="0,63.75 127.5,191.25 255,63.75"/></g></g>
-              </svg>
-            </div>
-          </a>
+              {{ end }}
+            </select>
+          </div>
         </li>
       {{ end }}
       {{ if $showvisitedlinks }}
@@ -93,6 +87,38 @@
     </section>
   </div>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Collapsible sidebar sections
+  document.querySelectorAll("#sidebar .dd-item > a").forEach(function (link) {
+    var li = link.parentElement;
+    var ul = li.querySelector(":scope > ul");
+    if (!ul) return; // no children, skip
+
+    // Only collapse if NOT active/parent (i.e. not on current path)
+    if (!li.classList.contains("parent") && !li.classList.contains("active")) {
+      ul.style.display = "none";
+    }
+
+    // Add toggle arrow
+    var arrow = document.createElement("span");
+    arrow.className = "menu-arrow";
+    arrow.innerHTML = li.classList.contains("parent") || li.classList.contains("active")
+      ? " ▾" : " ▸";
+    arrow.style.cssText = "float:right; cursor:pointer; font-size:0.75em; opacity:0.6;";
+    link.appendChild(arrow);
+
+    arrow.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var isOpen = ul.style.display !== "none";
+      ul.style.display = isOpen ? "none" : "block";
+      arrow.innerHTML = isOpen ? " ▸" : " ▾";
+    });
+  });
+});
+</script>
 
 <!-- templates -->
 {{ define "section-tree-nav" }}
