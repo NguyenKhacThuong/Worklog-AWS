@@ -53,31 +53,39 @@
       <hr/>
       <ul style="list-style:none; padding:0; margin:0;">
       {{ if .Site.IsMultiLingual }}
-        <li class="padding" style="display:flex; align-items:center; gap:6px; padding: 6px 16px;">
-          <i class="fas fa-language fa-fw"></i>
-          <div class="select-style" style="flex:1;">
-            <select id="select-language" onchange="location = this.value;" style="width:100%;">
-              {{ range .Site.Languages }}
-                {{ $lang := .Lang }}
-                {{ $langName := .LanguageName }}
-                {{ if eq $.Page.Lang $lang }}
-                  <option value="{{ $.Page.Permalink }}" selected>{{ $langName }}</option>
-                {{ else }}
-                  {{ if $.Page.IsTranslated }}
-                    {{ with index $.Page.Translations 0 }}
-                      {{ if eq .Lang $lang }}
-                        <option value="{{ .Permalink }}">{{ $langName }}</option>
-                      {{ else }}
-                        <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
-                      {{ end }}
+        <li style="list-style:none; padding: 4px 16px; display:flex; align-items:center; gap:8px;">
+          <i class="fas fa-language fa-fw" style="opacity:0.7;"></i>
+          <select id="select-language" onchange="location = this.value;" style="
+            background: transparent;
+            color: inherit;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 0.85em;
+            cursor: pointer;
+            outline: none;
+            max-width: 140px;
+          ">
+            {{ range .Site.Languages }}
+              {{ $lang := .Lang }}
+              {{ $langName := .LanguageName }}
+              {{ if eq $.Page.Lang $lang }}
+                <option value="{{ $.Page.Permalink }}" selected style="background:#2d2d2d;">{{ $langName }}</option>
+              {{ else }}
+                {{ if $.Page.IsTranslated }}
+                  {{ with index $.Page.Translations 0 }}
+                    {{ if eq .Lang $lang }}
+                      <option value="{{ .Permalink }}" style="background:#2d2d2d;">{{ $langName }}</option>
+                    {{ else }}
+                      <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}" style="background:#2d2d2d;">{{ $langName }}</option>
                     {{ end }}
-                  {{ else }}
-                    <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                   {{ end }}
+                {{ else }}
+                  <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}" style="background:#2d2d2d;">{{ $langName }}</option>
                 {{ end }}
               {{ end }}
-            </select>
-          </div>
+            {{ end }}
+          </select>
         </li>
       {{ end }}
       {{ if $showvisitedlinks }}
