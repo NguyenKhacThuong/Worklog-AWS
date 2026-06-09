@@ -48,58 +48,48 @@
       </section>
     {{end}}
 
-    {{ if or .Site.IsMultiLingual $showvisitedlinks }}
-    <section id="prefooter">
+    <section id="footer">
+      {{ partial "menu-footer.html" . }}
       <hr/>
-      <ul>
+      <ul style="list-style:none; padding:0; margin:0;">
       {{ if .Site.IsMultiLingual }}
         <li>
           <a class="padding">
             <i class="fas fa-language fa-fw"></i>
-          <div class="select-style">
-            <select id="select-language" onchange="location = this.value;">
-          {{ range .Site.Languages }}
-              {{ $lang := .Lang }}
-              {{ $langName := .LanguageName }}
-              {{ $langURL := $.Site.Home.Permalink }}
-              {{ if eq $.Page.Lang $lang }}
-                <option value="{{ $.Page.Permalink }}" selected>{{ $langName }}</option>
-              {{ else }}
-                {{ if $.Page.IsTranslated }}
-                  {{ with index $.Page.Translations 0 }}
-                    {{ if eq .Lang $lang }}
-                      <option value="{{ .Permalink }}">{{ $langName }}</option>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                {{ range .Site.Languages }}
+                  {{ $lang := .Lang }}
+                  {{ $langName := .LanguageName }}
+                  {{ if eq $.Page.Lang $lang }}
+                    <option value="{{ $.Page.Permalink }}" selected>{{ $langName }}</option>
+                  {{ else }}
+                    {{ if $.Page.IsTranslated }}
+                      {{ with index $.Page.Translations 0 }}
+                        {{ if eq .Lang $lang }}
+                          <option value="{{ .Permalink }}">{{ $langName }}</option>
+                        {{ else }}
+                          <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
+                        {{ end }}
+                      {{ end }}
                     {{ else }}
-                      <option value="{{ (printf "%s%s" (index $.Site.Home.Translations 0).Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
+                      <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                     {{ end }}
                   {{ end }}
-                {{ else }}
-                  <option value="{{ (printf "%s%s" $.Site.Home.Permalink $.Page.RelPermalink) }}">{{ $langName }}</option>
                 {{ end }}
-              {{ end }}
-          {{ end }}
-        </select>
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
-          <g>
-            <g id="arrow-drop-down">
-              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
-            </g>
-          </g>
-        </svg>
-        </div>
-        </a>
+              </select>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                <g><g id="arrow-drop-down"><polygon points="0,63.75 127.5,191.25 255,63.75"/></g></g>
+              </svg>
+            </div>
+          </a>
         </li>
-      {{end}}
-
-      {{ if $showvisitedlinks}}
+      {{ end }}
+      {{ if $showvisitedlinks }}
         <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> {{T "Clear-History"}}</a></li>
       {{ end }}
       </ul>
-    </section>
-    {{ end }}
-    <section id="footer">
-      {{ partial "menu-footer.html" . }}
     </section>
   </div>
 </nav>
