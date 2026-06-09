@@ -25,6 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
 [Languages.en]
 title = "Internship Report"
 weight = 1
+languagesName = "English"
 label = "English"
 
 [[Languages.en.menu.shortcuts]]
