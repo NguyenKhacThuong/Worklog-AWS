@@ -1,125 +1,145 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
-chapter: false
-pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo Cáo Tổng Hợp: "FCAJ Community Day"
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+> **Sự kiện:** FCAJ Community Day
+> **Ban tổ chức:** Cộng đồng First Cloud AI Journey (FCAJ)
+> **Chủ trì:** Huỳnh Hoàng Long & Thiện Lữ
+> **Địa điểm:** Tòa nhà Bitexco Financial Tower, Tầng 26, 2 Hải Triều, Bến Nghé, Quận 1, TP.HCM
+> **Hình thức:** Sự kiện cộng đồng công nghệ trực tiếp
 
-### Mục Đích Của Sự Kiện
+---
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Mục Tiêu Sự Kiện
 
-### Danh Sách Diễn Giả
+- Kết nối các thành viên cộng đồng First Cloud AI Journey (FCAJ) và thúc đẩy chia sẻ kiến thức ngang hàng
+- Giới thiệu Platform Engineering và vai trò của nó trong hệ sinh thái cloud và DevOps hiện đại
+- Chia sẻ kinh nghiệm thực tiễn áp dụng GenAI trên AWS trong các dự án production thực tế
+- Khám phá các công cụ và phương pháp mới nhất để xây dựng và triển khai ứng dụng AI trên AWS
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+---
 
-### Nội Dung Nổi Bật
+### Diễn Giả & Các Phiên
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- **Phiên 1 – Xây Dựng Platform Engineering Hiện Đại & Lộ Trình Nghề Nghiệp**
+  Giới thiệu Platform Engineering, văn hóa công ty, cơ hội thực tập và Q&A mở với các chuyên gia
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- **Phiên 2 – GenAIOps Thiết Yếu: DevOps cho Ứng Dụng Generative AI**
+  Nền tảng DevOps trên AWS và ví dụ GenAIOps thực tế sử dụng Amazon Bedrock AgentCore Observability, EKS và Langfuse
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- **Phiên 3 – Triển Khai Code trong Kỷ Nguyên Agentic**
+  Tổng quan về công cụ phát triển agentic, deep-dive vào quy trình làm việc, productivity playbook và demo trực tiếp
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- **Phiên 4 – GenAI Đa Phương Thức Cấp Production trên AWS**
+  Stack ứng dụng AI mới, tìm kiếm đa phương thức với Nova Embeddings, GraphRAG cho knowledge doanh nghiệp, multi-agent workflows và GenAI an toàn/có thể quan sát được
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+- **Phiên 5 – Từ Edge đến Origin: CloudFront như Nền Tảng**
+  Các use case của Amazon CloudFront, tối ưu chi phí, khả năng bảo mật và cải tiến hiệu suất/độ tin cậy
 
-#### Domain-Driven Design (DDD)
+---
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### Điểm Nổi Bật Chính
 
-#### Event-Driven Architecture
+#### Platform Engineering trong Stack Hiện Đại
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+- Làm rõ vai trò của **Platform Engineering** trong môi trường cloud và DevOps
+- Thảo luận về cách internal developer platform tăng tốc năng suất và giảm gánh nặng nhận thức cho đội kỹ thuật
+- Cung cấp hướng dẫn thực tiễn về **lộ trình nghề nghiệp** vào vai trò Platform Engineering
 
-#### Compute Evolution
+#### GenAIOps – DevOps cho AI
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+- Giới thiệu khái niệm **GenAIOps**: áp dụng các nguyên tắc DevOps vào vòng đời ứng dụng Generative AI
+- Demo ví dụ dự án AWS thực tế tích hợp **Bedrock AgentCore Observability** và **Langfuse** để theo dõi AI pipeline
+- Đề cập các mẫu triển khai dựa trên EKS cho workload GenAI
 
-#### Amazon Q Developer
+#### Phát Triển Agentic & Năng Suất
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Xác định vấn đề cốt lõi trong phân phối phần mềm ở kỷ nguyên agentic và cách tooling đã phát triển
+- Trình bày **productivity playbook** dành cho lập trình viên làm việc với AI agent
+- Demo trực tiếp cho thấy các công cụ agentic thay đổi quy trình phát triển hàng ngày như thế nào
 
-### Những Gì Học Được
+#### GenAI Đa Phương Thức Cấp Production
 
-#### Tư Duy Thiết Kế
+- Giới thiệu **stack ứng dụng AI mới** và các hệ quả kiến trúc của nó
+- Khám phá **tìm kiếm đa phương thức** sử dụng Amazon Nova Embeddings và **GraphRAG** cho knowledge graph doanh nghiệp
+- Đề cập cách xây dựng hệ thống GenAI multi-agent **an toàn và có thể quan sát** trong môi trường production
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### CloudFront như Nền Tảng Hạ Tầng
 
-#### Kiến Trúc Kỹ Thuật
+- Định vị **Amazon CloudFront** như một lớp nền tảng vượt ra ngoài use case CDN thông thường
+- Đề cập các chiến lược **tối ưu chi phí**, tăng cường **bảo mật** và cải thiện **độ tin cậy, hiệu suất**
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+---
 
-#### Chiến Lược Hiện Đại Hóa
+### Bài Học Rút Ra
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### Kỹ Thuật GenAI
+
+- **GenAIOps là một ngành thực sự**: observability, versioning và deployment pipeline quan trọng với AI không kém gì phần mềm truyền thống
+- Hệ thống đa phương thức và multi-agent cần kiến trúc có chủ đích — không chỉ là chọn model
+- **GraphRAG** cho phép truy xuất kiến thức phong phú hơn, nhận biết quan hệ so với vector search thông thường
+
+#### Phát Triển Agentic
+
+- Sự chuyển dịch sang agentic workflow thay đổi cách lập trình viên viết, kiểm thử và triển khai code
+- Có một **productivity playbook** rõ ràng là điều cần thiết để tránh tool sprawl và duy trì tốc độ phân phối
+- Công cụ agentic mạnh mẽ nhất khi được tích hợp vào pipeline CI/CD hiện có
+
+#### Hạ Tầng & Chi Phí
+
+- CloudFront là đòn bẩy chưa được tận dụng hết cho cả **hiệu suất và giảm chi phí** ở lớp hạ tầng
+- Các khả năng bảo mật tích hợp trong CloudFront giảm nhu cầu sử dụng thêm giải pháp bên thứ ba
+
+---
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Áp dụng GenAIOps**: tích hợp công cụ observability như Langfuse vào AI pipeline ngay từ đầu
+- **Khám phá GraphRAG**: đánh giá cách tiếp cận knowledge graph cho các dự án cần truy vấn quan hệ phức tạp
+- **Xây dựng với Nova Embeddings**: thử nghiệm tìm kiếm đa phương thức cho các use case phù hợp
+- **Rà soát cách dùng CloudFront**: kiểm tra các workload hiện tại để tìm cơ hội tối ưu với CloudFront
+- **Thử công cụ agentic**: tích hợp công cụ phát triển agentic vào quy trình cá nhân dựa trên productivity playbook được chia sẻ
 
-### Trải nghiệm trong event
+---
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+### Trải Nghiệm Tại Sự Kiện
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+Tham dự **FCAJ Community Day** tại tòa nhà biểu tượng Bitexco Financial Tower là một trải nghiệm đầy năng lượng, kết hợp chiều sâu kỹ thuật với tinh thần cộng đồng mạnh mẽ. Các điểm nổi bật bao gồm:
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### Nội dung kỹ thuật phong phú
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+- Năm phiên liên tiếp bao phủ toàn bộ phổ từ hạ tầng (CloudFront) đến ứng dụng (GenAI) đến quy trình lập trình (công cụ agentic), mang lại cái nhìn toàn diện về hệ sinh thái AWS hiện đại
+- Mỗi phiên được gắn kết với **ví dụ dự án thực tế** thay vì tổng quan lý thuyết, giúp nội dung có thể áp dụng ngay lập tức
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Bầu không khí cộng đồng
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Sự kiện do cộng đồng FCAJ tổ chức, mang lại cảm giác học ngang hàng khác biệt so với hội nghị doanh nghiệp
+- Định dạng Q&A tương tác trong phiên mở đầu cho phép tương tác trực tiếp với diễn giả — cơ hội hiếm có để nhận câu trả lời thẳng thắn từ người trong nghề
+- Kết nối trong giờ giải lao củng cố mối quan hệ với đồng nghiệp đang đối mặt với những thách thức tương tự trong việc áp dụng cloud và AI
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+#### Tiếp cận thực tiễn với công cụ mới
+
+- Gặp gỡ **Bedrock AgentCore**, **Langfuse** và **Nova Embeddings** trong bối cảnh trực tiếp giúp tăng tốc sự hiểu biết của tôi vượt xa so với đọc tài liệu
+- Demo phát triển agentic biến các khái niệm trừu tượng về AI-assisted coding thành điều cụ thể và có thể thực hiện được
+
+#### Bài học kinh nghiệm
+
+- Các sự kiện cộng đồng như FCAJ Community Day đưa ra **các thực tiễn mới nổi** (như GenAIOps) trước khi chúng trở thành kiến thức phổ biến
+- Sự kết hợp Platform Engineering, GenAI và CloudFront trong một sự kiện minh họa mức độ liên kết sâu sắc của các stack cloud hiện đại
+- Tham gia cộng đồng thường xuyên là một trong những chiến lược hiệu quả nhất để cập nhật trong một lĩnh vực thay đổi nhanh chóng
+
+#### Một số hình ảnh sự kiện
+
+![Tinh Truong trình bày "Context Is Everything" trước khán phòng đầy đủ tại văn phòng AWS](../../images/event1-1.jpg)
+
+![Diễn giả trình bày agenda phiên về kiến trúc AI đa tác nhân](../../images/event1-2.jpg)
+
+![Ảnh chụp nhóm toàn bộ người tham dự FCAJ Community Day](../../images/event1-3.jpg)
+
+---
+
+> Nhìn chung, FCAJ Community Day củng cố quan điểm rằng phát triển cloud hiện đại ngày càng không thể tách rời khỏi AI — và rằng xây dựng trong cộng đồng, với kiến thức được chia sẻ và ví dụ thực tế, là con đường nhanh nhất đến chuyên môn thực sự.
