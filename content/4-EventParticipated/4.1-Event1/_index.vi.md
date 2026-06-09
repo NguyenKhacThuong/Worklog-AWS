@@ -134,10 +134,6 @@ Tham dự **FCAJ Community Day** tại tòa nhà biểu tượng Bitexco Financi
 
 #### Một số hình ảnh sự kiện
 
-![Tinh Truong trình bày "Context Is Everything" trước khán phòng đầy đủ tại văn phòng AWS](Worklog-AWS/static/images/event1-1.jpg)
-
-![Diễn giả trình bày agenda phiên về kiến trúc AI đa tác nhân](Worklog-AWS/static/images/event1-2.jpg)
-
 ![Ảnh chụp nhóm toàn bộ người tham dự FCAJ Community Day](Worklog-AWS/static/images/event1-3.jpg)
 
 ---
