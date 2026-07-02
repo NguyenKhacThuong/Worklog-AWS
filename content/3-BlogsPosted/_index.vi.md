@@ -6,17 +6,11 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### [Blog 1 - CloudFront ra mắt gói giá cố định (Flat-rate): Chấm dứt nỗi lo “sập ví” khi traffic tăng vọt](3.1-Blog1/)
+Bài viết giải thích mô hình giá mới của Amazon CloudFront theo gói cố định, giúp người dùng dễ dự đoán chi phí và tránh hóa đơn bất ngờ khi lưu lượng tăng đột biến.
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+### [Blog 2 - Bảo mật Serverless không nằm ở một lớp duy nhất](3.2-Blog2/)
+Bài viết nhấn mạnh nguyên tắc Defense-in-Depth trong kiến trúc serverless và giải thích vì sao bảo mật không nên phụ thuộc vào một lớp phòng thủ duy nhất như WAF hay API Gateway.
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 3 - Khám phá sức mạnh của kiến trúc Đa đặc vụ (Multi-Agent) trong kiểm thử bảo mật](3.3-Blog3/)
+Bài viết khám phá cách kiến trúc Multi-Agent có thể nâng cao hiệu quả kiểm thử bảo mật và pentest bằng cách kết hợp suy luận tự chủ, phân công chuyên môn và phát hiện các kịch bản tấn công chuỗi.

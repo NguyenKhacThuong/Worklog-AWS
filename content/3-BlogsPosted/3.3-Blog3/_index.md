@@ -5,27 +5,38 @@ weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# EXPLORING THE POWER OF MULTI-AGENT ARCHITECTURE IN SECURITY TESTING
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+Artificial intelligence (AI) is developing at a rapid pace, but traditional AI agents still face certain limitations. They often struggle to retain information over long periods, operate independently for extended durations, and require continuous human supervision.
 
-Key points to know:
+To address this challenge, the Multi-Agent architecture has emerged as a major breakthrough, especially in highly specialized fields such as cybersecurity and penetration testing.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+Recently, AWS has applied this architecture in AWS Security Agent, demonstrating several significant advantages:
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## 1. Greater autonomy and ability to solve complex problems
 
-...Image...
+Unlike traditional AI systems, Multi-Agent architecture uses frontier agents that can perform complex reasoning, plan multi-step tasks, and operate autonomously for hours or even days. They do not simply execute a single command; instead, they can adjust strategies based on incoming feedback.
 
-...Link...
+## 2. Better performance through specialized division of labor
 
-...Guide...
+One of the greatest strengths of Multi-Agent systems is their collaboration. Like a real team of experts, each agent is assigned a specific role. One agent may gather data, another may analyze vulnerabilities, while others verify findings and consolidate results. This division of labor improves accuracy, speed, and scalability.
+
+## 3. Discovery of chained attack paths
+
+Traditional vulnerability scanners often identify isolated issues. In contrast, Multi-Agent systems can connect small weaknesses into a more complex chained attack scenario. For example, they may combine a minor information leak with a privilege escalation vulnerability to show how an attacker could penetrate deeper into a system.
+
+## 4. Saving time and resources
+
+Manual penetration testing is expensive and can take weeks. By automating tasks such as authentication, reconnaissance, planning, and CVSS report generation, Multi-Agent systems significantly reduce the workload for security professionals, allowing them to focus on remediation rather than manual investigation.
+
+## Conclusion
+
+Multi-Agent architecture demonstrates that when specialized AIs are connected and work together as a team, they can solve complex workflows far beyond the capabilities of a single AI model. In the future, this approach will not only benefit the cybersecurity field, but will also become a foundation for automating complex processes in scientific research, software development, and beyond.
+
+**Reference:** <https://aws.amazon.com/vi/blogs/security/inside-aws-security-agent-a-multi-agent-architecture-for-automated-penetration-testing/>
+
+**Image:**
+![Blog 3 Image](/images/blog3-1.png)
+
+**Original Post:** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2201822970582663/>
