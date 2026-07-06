@@ -1,0 +1,80 @@
+---
+title: "Prerequisites"
+date: 2026-07-01
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
+---
+
+#### Account & Tools
+
+| Requirement | Detail |
+|---|---|
+| AWS Account | Personal, deployment region: `ap-southeast-1` (Singapore) |
+| AWS CLI | v2, configured via `aws configure` with an appropriately-permissioned IAM User |
+| Node.js | v20+ (used for the Express backend, Vite frontend, and Lambda runtime) |
+| Docker | Used to build the EC2 image (multi-stage Dockerfile) and for local LocalStack testing |
+| Git / GitHub | Dedicated repo, GitHub Actions used for CI/CD |
+| Cloudflare account | A custom domain with DNS pointed to Cloudflare (replacing CloudFront) |
+| Gemini API Key | Created from Google AI Studio (free tier: 1,500 requests/day, 15 RPM) |
+
+#### Required IAM Permissions
+
+Attach the following policy (or an equivalent, progressively narrowed under the least-privilege principle) to the IAM User used for deployment:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CoreInfraDeploy",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:*",
+        "elasticloadbalancing:*",
+        "autoscaling:*",
+        "rds:*",
+        "elasticache:*",
+        "s3:*",
+        "sqs:*",
+        "lambda:*",
+        "secretsmanager:*",
+        "kms:*",
+        "wafv2:*",
+        "cloudwatch:*",
+        "logs:*",
+        "sns:*",
+        "iam:CreateRole",
+        "iam:AttachRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:PassRole",
+        "iam:GetRole",
+        "iam:CreateInstanceProfile",
+        "iam:AddRoleToInstanceProfile",
+        "iam:CreateOpenIDConnectProvider",
+        "ecr:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+> This policy is used during the deployment/development phase. In production, the IAM Roles attached to EC2/Lambda (`quillo-ec2-role`, `quillo-lambda-role`, `quillo-github-actions-deploy-role`) are scoped down to specific resources — see [5.3 Networking](../5.3-Networking/) and the related IAM sections for details.
+
+#### Local Dev Setup (optional, for testing before deployment)
+
+```bash
+git clone https://github.com/Chubekho/Quillo
+cd project
+npm install
+docker compose up -d          # PostgreSQL + Redis + LocalStack
+bash infrastructure/scripts/setup-local.sh
+npm run dev                   # API :3001 + Frontend :5173
+```
+
+Confirm the CLI is configured against the right account/region before moving on to real infrastructure deployment:
+```bash
+aws sts get-caller-identity
+aws configure get region   # expected: ap-southeast-1
+```

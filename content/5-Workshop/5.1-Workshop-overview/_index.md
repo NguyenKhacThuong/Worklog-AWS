@@ -1,18 +1,48 @@
 ---
-title : "Introduction"
-date : 2024-01-01 
-weight : 1 
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Project Overview"
+date: 2026-07-01
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+#### Context
 
-#### Workshop overview
-In this workshop, you will use two VPCs. 
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with. 
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
+**AI Content Generator Platform** is the graduation workshop project, implemented over 4 weeks (Week 9–12) on real AWS infrastructure (region `ap-southeast-1`). It is a multi-tenant SaaS platform that automates marketing content production (blog posts, social media, ads, email) using Generative AI, built around the **Brand Persona** concept — every piece of generated content follows the brand voice the user has defined.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+**Repository:** [github.com/Chubekho/Quillo](https://github.com/Chubekho/Quillo)
+
+#### Problem Solved
+
+Small and medium businesses (SMBs) typically spend 3–7 days per content cycle (brief → write → review → revise → publish), pay $500–3,000/month for copywriters/agencies, and struggle to keep brand voice consistent across multiple writers. This project addresses all three problems with an asynchronous AI pipeline that cuts content generation time to under 60 seconds per piece.
+
+#### Architecture Overview
+
+The system follows a multi-tier architecture inside a dedicated VPC, spanning two Availability Zones for high availability:
+- **Frontend:** React SPA, hosted on S3 Static Website, distributed via Cloudflare (replacing CloudFront — see section 5.7 for the reason).
+- **Backend:** Node.js/Express API running on EC2, behind an Application Load Balancer + Auto Scaling Group.
+- **Asynchronous AI processing:** the API enqueues jobs to SQS, a Lambda worker consumes them, calls the Gemini API, and stores results in S3/RDS.
+- **Data:** PostgreSQL on RDS Multi-AZ, cached with ElastiCache Redis.
+- **Security & operations:** Secrets Manager, KMS, WAF, CloudWatch/SNS, CI/CD via GitHub Actions (OIDC).
+
+![AI Content Generator Platform architecture](/images/5-Workshop/5.1-Workshop-overview/architecture.jpg)
+
+#### Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React 18, Vite, TypeScript, Zustand, TanStack Query, Tailwind CSS |
+| Backend | Node.js, Express, TypeScript, Prisma ORM |
+| Database | PostgreSQL (Amazon RDS Multi-AZ) |
+| AI | Gemini 2.5 Flash / Flash-Lite (via a provider abstraction layer) |
+| Queue & Worker | Amazon SQS + AWS Lambda |
+| Cache | ElastiCache Redis |
+| CDN/Proxy | S3 Static Website + Cloudflare |
+| CI/CD | GitHub Actions (AWS authentication via OIDC) |
+
+#### Results Achieved
+
+- A production system running live on a custom domain over HTTPS, passing full end-to-end testing (register → create a Brand Persona → generate AI content → export to PDF/DOCX/HTML → track usage).
+- A fully automated CI/CD pipeline: pushing to the main branch automatically updates production, with no manual steps.
+- Passed basic attack testing thanks to AWS WAF (blocking SQL Injection/XSS payloads).
+- Average AI content generation time under 60 seconds per piece, meeting the target set in the Proposal.
