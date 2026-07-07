@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# ĐỀ XUẤT DỰ ÁN
 
 ## 1. Tổng quan dự án
 

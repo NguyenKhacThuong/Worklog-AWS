@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# PROJECT PROPOSAL
-
 ## 1. Project Overview
 
 AI Content Generator Platform is a next-generation SaaS platform that helps small and medium businesses (SMBs) automate their marketing content creation process using Generative AI. The platform combines AWS Cloud and the Gemini API (Google AI) to deliver a scalable, secure, and versatile content generation solution.
