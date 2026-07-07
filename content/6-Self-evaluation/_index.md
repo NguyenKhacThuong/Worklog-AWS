@@ -1,12 +1,12 @@
 ---
 title: "Self-Assessment"
-date: 2024-01-01
+date: 2026-04-20
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship with the First Cloud AI Journey program from **April 20, 2026** to **July 4, 2026**, I had the opportunity to apply academic knowledge to real cloud practice. I contributed to the AWS worklog site using Hugo, configured AWS account security, set up cost monitoring, and explored core cloud topics from compute and storage to automation, networking, observability, and security.
+During my internship with the First Cloud AI Journey program from **April 20, 2026** to **July 12, 2026**, I had the opportunity to apply academic knowledge to real cloud practice. I contributed to the AWS worklog site using Hugo, configured AWS account security, set up cost monitoring, and explored core cloud topics from compute and storage to automation, networking, observability, and security.
 
 I participated actively in the Cloud AI workshops and completed practical tasks that improved my skills in infrastructure setup, documentation, deployment, and team collaboration.
 
