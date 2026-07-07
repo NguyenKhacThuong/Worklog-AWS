@@ -52,6 +52,10 @@ Sự kiện này giúp tôi có nhìn nhận rộng hơn về cách AI có thể
 
 ## Một số hình ảnh của sự kiện
 
-*Thêm hình ảnh sự kiện của bạn tại đây*
+![Ảnh sự kiện 2 - 1](/images/event2-1.jpg)
+
+![Ảnh sự kiện 2 - 2](/images/event2-2.jpg)
+
+![Ảnh chụp nhóm toàn bộ người tham dự FCAJ Community Day](/images/event2-3.jpg)
 
 > Nhìn chung, FCAJ Community Day là một sự kiện rất hữu ích, giúp tôi hiểu rõ hơn về hướng đi tương lai của AI trong vận hành cloud, tự động hóa và hệ thống doanh nghiệp an toàn.

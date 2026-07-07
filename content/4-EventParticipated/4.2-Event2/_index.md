@@ -52,6 +52,10 @@ The event gave me a broader perspective on how AI can be integrated into real op
 
 ## Some event photos
 
-*Add your event photos here*
+![Event 2 photo 1](/images/event2-1.jpg)
+
+![Event 2 photo 2](/images/event2-2.jpg)
+
+![Group photo of all FCAJ Community Day participants](/images/event2-3.jpg)
 
 > Overall, FCAJ Community Day was a meaningful experience that helped me better understand the future direction of AI in cloud operations, automation, and secure enterprise systems.
