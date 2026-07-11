@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại chương trình **First Cloud AI Journey** từ **20/04/2026** đến **12/07/2026**, tôi đã có cơ hội áp dụng kiến thức học thuật vào thực tế công việc. Tôi tham gia xây dựng trang Worklog AWS bằng Hugo, cấu hình bảo mật tài khoản AWS, thiết lập giám sát chi phí và khám phá các chủ đề cốt lõi như compute, storage, networking, automation, observability và security.
+Trong suốt thời gian thực tập tại chương trình **First Cloud AI Journey** từ **17/04/2026** đến **30/07/2026**, tôi đã có cơ hội áp dụng kiến thức học thuật vào thực tế công việc. Tôi tham gia xây dựng trang Worklog AWS bằng Hugo, cấu hình bảo mật tài khoản AWS, thiết lập giám sát chi phí và khám phá các chủ đề cốt lõi như compute, storage, networking, automation, observability và security.
 
 Trong quá trình thực tập, tôi thực hiện các bài tập thực hành tại workshop, ghi chép và báo cáo tiến độ công việc, qua đó nâng cao kỹ năng triển khai, tài liệu hóa và làm việc nhóm.
 

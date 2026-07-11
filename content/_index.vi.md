@@ -21,7 +21,7 @@ chapter: false
     <p><strong>Lớp:</strong> AWS082025</p>
     <p><strong>Công ty thực tập:</strong> Công ty TNHH Amazon Web Services Viet Nam</p>
     <p><strong>Vị trí thực tập:</strong> Workforce Bootcamp - First Cloud AI Journey</p>
-    <p><strong>Thời gian thực tập:</strong> Từ ngày 20/04/2026 đến ngày 12/07/2026</p>
+    <p><strong>Thời gian thực tập:</strong> Từ ngày 17/04/2026 đến ngày 30/07/2026</p>
   </div>
 </div>
 

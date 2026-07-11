@@ -19,7 +19,7 @@ chapter: false
     <p><strong>Class:</strong> AWS082025</p>
     <p><strong>Internship Company:</strong> Amazon Web Services Viet Nam Company Limited</p>
     <p><strong>Internship Position:</strong> Workforce Bootcamp - First Cloud AI Journey</p>
-    <p><strong>Internship Duration:</strong> From 20/04/2026 to 12/07/2026</p>
+    <p><strong>Internship Duration:</strong> From 17/04/2026 to 30/07/2026</p>
   </div>
 </div>
 
