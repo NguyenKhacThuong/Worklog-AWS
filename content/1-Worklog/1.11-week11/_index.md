@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 11 – Advanced Automation and GitOps"
+title: "Advanced Automation and GitOps"
 date: 2026-04-20
 draft: false
 weight: 11
 chapter: false
+pre: " <b> Week 11: </b> "
 ---
 
 ## Objectives

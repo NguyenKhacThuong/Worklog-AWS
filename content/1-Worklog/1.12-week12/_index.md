@@ -1,9 +1,11 @@
 ﻿---
-title: "Week 12 – Capstone Review and Handover"
+title: "Capstone Review and Handover"
 date: 2026-04-20
 draft: false
 weight: 12
 chapter: false
+pre: " <b> Week 12: </b> "
+
 ---
 
 ## Objectives

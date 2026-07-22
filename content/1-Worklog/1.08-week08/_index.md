@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 08 – Networking and Connectivity"
+title: "Networking and Connectivity"
 date: 2026-04-20
 draft: false
 weight: 8
 chapter: false
+pre: " <b> Week 08: </b> "
 ---
 
 ## Objectives

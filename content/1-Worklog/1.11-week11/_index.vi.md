@@ -1,9 +1,11 @@
 ---
-title: "Tuần 11 – Tự động hóa nâng cao và GitOps"
+title: "Tự động hóa nâng cao và GitOps"
 date: 2026-04-20
 draft: false
 weight: 11
 chapter: false
+pre: " <b> Tuần 11: </b> "
+
 ---
 
 ## Mục tiêu

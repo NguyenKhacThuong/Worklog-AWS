@@ -1,9 +1,11 @@
 ---
-title: "Tuần 08 – Mạng và Kết nối"
+title: "Mạng và Kết nối"
 date: 2026-04-20
 draft: false
 weight: 8
 chapter: false
+pre: " <b> Tuần 08: </b> "
+
 ---
 
 ## Mục tiêu

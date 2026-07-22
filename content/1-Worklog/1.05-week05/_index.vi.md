@@ -1,9 +1,11 @@
 ---
-title: "Tuần 05 – Tự động hóa, IaC và CI/CD"
+title: "Tự động hóa, IaC và CI/CD"
 date: 2026-04-20
 draft: false
 weight: 5
 chapter: false
+pre: " <b> Tuần 05: </b> "
+
 ---
 
 ## Mục tiêu

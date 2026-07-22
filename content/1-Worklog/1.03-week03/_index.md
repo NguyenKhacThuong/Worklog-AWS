@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 03 – Storage and Databases"
+title: "Storage and Databases"
 date: 2026-04-20
 draft: false
 weight: 3
 chapter: false
+pre: " <b> Week 03: </b> "
 ---
 
 ## Objectives

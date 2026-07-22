@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 07 – Security Hardening"
+title: "Security Hardening"
 date: 2026-04-20
 draft: false
 weight: 7
 chapter: false
+pre: " <b> Week 07: </b> "
 ---
 
 ## Objectives

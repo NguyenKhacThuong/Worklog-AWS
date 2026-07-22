@@ -1,9 +1,11 @@
 ---
-title: "Tuần 06 – Quan sát và Giám sát"
+title: "Quan sát và Giám sát"
 date: 2026-04-20
 draft: false
 weight: 6
 chapter: false
+pre: " <b> Tuần 06: </b> "
+
 ---
 
 ## Mục tiêu

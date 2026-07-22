@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 02 – Networking and Compute Fundamentals"
+title: "Networking and Compute Fundamentals"
 date: 2026-04-20
 draft: false
 weight: 2
 chapter: false
+pre: " <b> Week 02: </b> "
 ---
 
 ## Objectives

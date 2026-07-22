@@ -1,9 +1,11 @@
 ---
-title: "Tuần 01 – Hướng dẫn và Thiết lập môi trường"
+title: "Hướng dẫn và Thiết lập môi trường"
 date: 2026-04-20
 draft: false
 weight: 1
 chapter: false
+pre: " <b> Tuần 01: </b> "
+
 ---
 
 ## Mục tiêu

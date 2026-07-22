@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 06 – Observability and Monitoring"
+title: "Observability and Monitoring"
 date: 2026-04-20
 draft: false
 weight: 6
 chapter: false
+pre: " <b> Week 06: </b> "
 ---
 
 ## Objectives

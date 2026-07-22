@@ -1,9 +1,11 @@
 ---
-title: "Tuần 10 – Dịch vụ dữ liệu và Phân tích"
+title: "Dịch vụ dữ liệu và Phân tích"
 date: 2026-04-20
 draft: false
 weight: 10
 chapter: false
+pre: " <b> Tuần 10: </b> "
+
 ---
 
 ## Mục tiêu

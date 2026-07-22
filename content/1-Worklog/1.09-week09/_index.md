@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 09 – Serverless and Event-Driven Architecture"
+title: "Serverless and Event-Driven Architecture"
 date: 2026-04-20
 draft: false
 weight: 9
 chapter: false
+pre: " <b> Week 09: </b> "
 ---
 
 ## Objectives

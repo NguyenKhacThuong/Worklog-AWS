@@ -1,9 +1,11 @@
 ---
-title: "Tuần 12 – Tổng kết, Đánh giá và Bàn giao"
+title: "Tổng kết, Đánh giá và Bàn giao"
 date: 2026-04-20
 draft: false
 weight: 12
 chapter: false
+pre: " <b> Tuần 12: </b> "
+
 ---
 
 ## Mục tiêu

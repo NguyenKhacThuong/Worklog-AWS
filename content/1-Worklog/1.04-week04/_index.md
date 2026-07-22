@@ -1,9 +1,11 @@
 ﻿---
-title: "Week 04 – Scaling and Content Delivery"
+title: "Scaling and Content Delivery"
 date: 2026-04-20
 draft: false
 weight: 4
 chapter: false
+pre: " <b> Week 04: </b> "
+
 ---
 
 ## Objectives

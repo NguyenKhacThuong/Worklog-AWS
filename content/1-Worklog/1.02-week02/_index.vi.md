@@ -1,9 +1,10 @@
 ---
-title: "Tuần 02 – Nền tảng Mạng và Tính toán"
+title: "Nền tảng Mạng và Tính toán"
 date: 2026-04-20
 draft: false
 weight: 2
 chapter: false
+pre: " <b> Tuần 02: </b> "
 ---
 
 ## Mục tiêu

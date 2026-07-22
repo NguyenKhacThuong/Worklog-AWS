@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 05 – Automation, IaC, and CI/CD"
+title: "Automation, IaC, and CI/CD"
 date: 2026-04-20
 draft: false
 weight: 5
 chapter: false
+pre: " <b> Week 05: </b> "
 ---
 
 ## Objectives

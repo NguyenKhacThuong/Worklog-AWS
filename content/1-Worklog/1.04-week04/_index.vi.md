@@ -1,9 +1,11 @@
 ---
-title: "Tuần 04 – Tự động mở rộng và Phân phối nội dung"
+title: "Tự động mở rộng và Phân phối nội dung"
 date: 2026-04-20
 draft: false
 weight: 4
 chapter: false
+pre: " <b> Tuần 04: </b> "
+
 ---
 
 ## Mục tiêu

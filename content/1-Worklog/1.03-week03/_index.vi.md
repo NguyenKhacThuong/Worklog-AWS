@@ -1,9 +1,11 @@
 ---
-title: "Tuần 03 – Lưu trữ và Cơ sở dữ liệu"
+title: "Lưu trữ và Cơ sở dữ liệu"
 date: 2026-04-20
 draft: false
 weight: 3
 chapter: false
+pre: " <b> Tuần 03: </b> "
+
 ---
 
 ## Mục tiêu

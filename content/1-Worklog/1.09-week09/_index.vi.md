@@ -1,9 +1,11 @@
 ---
-title: "Tuần 09 – Serverless và Kiến trúc theo sự kiện"
+title: "Serverless và Kiến trúc theo sự kiện"
 date: 2026-04-20
 draft: false
 weight: 9
 chapter: false
+pre: " <b> Tuần 09: </b> "
+
 ---
 
 ## Mục tiêu
