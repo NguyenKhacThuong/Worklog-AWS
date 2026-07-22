@@ -1,9 +1,10 @@
 ﻿---
-title: "Week 01 – Orientation and Environment Setup"
+title: "Orientation and Environment Setup"
 date: 2026-04-20
 draft: false
 weight: 1
 chapter: false
+pre: " <b> Week 01: </b> "
 ---
 
 ## Objectives
