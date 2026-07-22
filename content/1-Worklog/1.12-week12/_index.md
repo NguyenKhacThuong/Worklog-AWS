@@ -1,35 +1,35 @@
 ﻿---
-title: "Week 12 – Capstone, Review & Handover"
+title: "Week 12 – Capstone Review and Handover"
 date: 2026-04-20
 draft: false
 weight: 12
 chapter: false
 ---
 
-## Goals
+## Objectives
 
-* Consolidate learning by reviewing completed work and key deliverables.
-* Finalize documentation, demos, and knowledge transfer materials.
-* Validate deployment, security, observability, and cost controls.
-* Plan next steps and areas for continued improvement.
+* Consolidate the knowledge gained throughout the internship by reviewing completed work and major deliverables.
+* Finalize documentation, demo materials, and handover resources for future reference.
+* Validate deployment, security, observability, and cost-control measures.
+* Outline next steps and identify areas for continued improvement.
 
-## Suggested tasks (by day)
+## Suggested tasks
 
 | Day | Task | Notes |
 |-----|------|-------|
-| 1 | Review weeks 1-11 deliverables and update project documentation | Confirm accuracy and completion |
-| 2 | Prepare final demo or presentation for stakeholders | Highlight achievements and architecture |
-| 3 | Validate all deployments, security, and monitoring systems | Run end-to-end checks |
-| 4 | Review costs and optimize any remaining inefficiencies | Document cost saving actions |
-| 5 | Create handover notes and future backlog items | Include open issues and improvement ideas |
-| 6 | Conduct knowledge transfer and capture lessons learned | Summarize the learning journey |
+| 1 | Review deliverables from Weeks 1–11 and update the project documentation | Confirm accuracy and completeness |
+| 2 | Prepare the final demo or presentation for stakeholders | Highlight key achievements and architectural decisions |
+| 3 | Validate deployment, security, and monitoring configurations end to end | Perform comprehensive checks |
+| 4 | Review cloud costs and optimize any remaining inefficiencies | Document cost-saving actions |
+| 5 | Prepare handover notes, open issues, and future backlog items | Include improvement ideas and follow-up tasks |
+| 6 | Conduct knowledge transfer and document lessons learned | Summarize the overall learning journey |
 
-## Achievements
+## Key achievements
 
-* Completed a full internship worklog with cloud infrastructure, automation, and security.
-* Delivered documentation, demo assets, and operational notes.
-* Verified deployment, monitoring, and cost controls for the cloud environment.
-* Created a plan for future improvements and continued learning.
+* Completed a full internship worklog covering cloud infrastructure, automation, and security.
+* Delivered polished documentation, demo assets, and operational handover notes.
+* Verified deployment readiness, monitoring coverage, and cost-control measures.
+* Established a clear roadmap for future improvements and continued learning.
 
 ## Notes
 

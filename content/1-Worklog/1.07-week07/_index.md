@@ -6,29 +6,29 @@ weight: 7
 chapter: false
 ---
 
-## Goals
+## Objectives
 
-* Harden AWS security posture with least-privilege access.
+* Strengthen the AWS security posture through least-privilege access.
 * Review IAM roles, policies, and service permissions.
-* Enable security services such as GuardDuty, AWS Config, and AWS Security Hub.
-* Improve resource isolation and encryption.
+* Enable core security services such as GuardDuty, AWS Config, and Security Hub.
+* Improve resource isolation and encryption practices.
 
-## Suggested tasks (by day)
+## Suggested tasks
 
 | Day | Task | Notes |
 |-----|------|-------|
-| 1 | Audit IAM users, groups, roles, and policies | Remove unused permissions |
-| 2 | Implement least-privilege permissions for app services | Use managed policies and role assumptions |
-| 3 | Enable GuardDuty and review findings | Investigate suspicious activity |
-| 4 | Turn on AWS Config rules and Security Hub aggregation | Align with security best practices |
-| 5 | Encrypt data at rest and in transit across services | KMS keys, TLS, S3 encryption |
-| 6 | Document security controls and remediation steps | Capture security review notes |
+| 1 | Audit IAM users, groups, roles, and policies | Remove unused or excessive permissions |
+| 2 | Apply least-privilege permissions for application services | Use managed policies and role assumptions |
+| 3 | Enable GuardDuty and review findings | Investigate suspicious activity and alerts |
+| 4 | Turn on AWS Config rules and Security Hub aggregation | Align the setup with security best practices |
+| 5 | Encrypt data at rest and in transit across services | Use KMS, TLS, and S3 encryption |
+| 6 | Document security controls and remediation steps | Capture security review notes and follow-ups |
 
-## Achievements
+## Key achievements
 
 * Hardened identity and access control across the AWS account.
 * Enabled automated security monitoring and compliance checks.
-* Strengthened data protection with encryption best practices.
+* Strengthened data protection through encryption best practices.
 * Documented the security hardening process and next steps.
 
 ## Notes

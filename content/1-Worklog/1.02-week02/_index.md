@@ -1,5 +1,5 @@
 ﻿---
-title: "Week 02 – Networking & Compute Fundamentals"
+title: "Week 02 – Networking and Compute Fundamentals"
 date: 2026-04-20
 draft: false
 weight: 2
@@ -8,29 +8,29 @@ chapter: false
 
 ## Objectives
 
-* Understand and practice configuring Amazon VPC (subnets, route tables, IGW).
-* Deploy and manage EC2 instances.
-* Set up system monitoring with CloudWatch.
-* Practice attaching IAM Roles to EC2.
+* Understand and practice Amazon VPC configuration using subnets, route tables, and an Internet Gateway.
+* Deploy and manage EC2 instances in a secure and functional way.
+* Set up basic monitoring with CloudWatch.
+* Practice attaching IAM roles to EC2 instances and validating permissions.
 
-### Tasks
+## Suggested tasks
 
 | Day | Task | Start | End | Reference |
 |-----|------|-------|-----|-----------|
-| 1 | VPC workshop: create VPC, public/private subnets | 2026-04-27 | 2026-04-27 | https://000003.awsstudygroup.com |
-| 2 | Launch EC2 instance, configure Security Group | 2026-04-28 | 2026-04-28 | https://000004.awsstudygroup.com |
-| 3 | Attach IAM Role to EC2, verify access permissions | 2026-04-29 | 2026-04-29 | https://000048.awsstudygroup.com |
-| 4 | Set up CloudWatch metrics, create CPU alarm | 2026-04-30 | 2026-04-30 | https://000008.awsstudygroup.com |
-| 5 | SSH into EC2, install a simple web application | 2026-05-01 | 2026-05-01 | https://000004.awsstudygroup.com |
-| 6 | Write weekly report, update worklog on Hugo site | 2026-05-02 | 2026-05-02 | Internal docs |
+| 1 | Complete the VPC workshop and create public/private subnets | 2026-04-27 | 2026-04-27 | https://000003.awsstudygroup.com |
+| 2 | Launch an EC2 instance and configure the security group | 2026-04-28 | 2026-04-28 | https://000004.awsstudygroup.com |
+| 3 | Attach an IAM role to the EC2 instance and verify access permissions | 2026-04-29 | 2026-04-29 | https://000048.awsstudygroup.com |
+| 4 | Configure CloudWatch metrics and create a CPU alarm | 2026-04-30 | 2026-04-30 | https://000008.awsstudygroup.com |
+| 5 | Connect to the EC2 instance via SSH and install a simple web application | 2026-05-01 | 2026-05-01 | https://000004.awsstudygroup.com |
+| 6 | Write the weekly report and update the worklog on the Hugo site | 2026-05-02 | 2026-05-02 | Internal docs |
 
-### Achievements
+## Key achievements
 
-* Successfully created a VPC with public/private subnets, route table, and Internet Gateway.
-* Launched an EC2 instance and accessed it via SSH.
-* Attached an IAM Role to EC2 and verified S3 read permissions from the instance.
-* Created a CloudWatch alarm to alert when CPU exceeds 80%.
+* Successfully created a VPC with public and private subnets, a route table, and an Internet Gateway.
+* Launched an EC2 instance and accessed it through SSH.
+* Attached an IAM role to EC2 and verified read access to S3 from the instance.
+* Created a CloudWatch alarm that triggers when CPU usage exceeds 80%.
 
-### Notes
+## Notes
 
 Reference: https://cloudjourney.awsstudygroup.com/1-explore/
