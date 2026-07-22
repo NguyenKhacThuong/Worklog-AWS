@@ -19,7 +19,7 @@ chapter: false
     <p><strong>Trường:</strong> Đại học Công nghệ TP.HCM</p>
     <p><strong>Ngành:</strong> Công nghệ thông tin</p>
     <p><strong>Lớp:</strong> AWS082025</p>
-    <p><strong>Công ty thực tập:</strong> Công ty TNHH Amazon Web Services Viet Nam</p>
+    <p><strong>Công ty thực tập:</strong> Công ty TNHH Amazon Web Services Việt Nam</p>
     <p><strong>Vị trí thực tập:</strong> Workforce Bootcamp - First Cloud AI Journey</p>
     <p><strong>Thời gian thực tập:</strong> Từ ngày 17/04/2026 đến ngày 30/07/2026</p>
   </div>

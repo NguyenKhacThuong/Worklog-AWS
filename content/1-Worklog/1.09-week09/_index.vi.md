@@ -1,5 +1,5 @@
 ---
-title: "Serverless và Kiến trúc theo sự kiện"
+title: "Serverless và Kiến trúc hướng sự kiện"
 date: 2026-04-20
 draft: false
 weight: 9

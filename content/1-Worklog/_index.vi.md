@@ -13,7 +13,7 @@ pre: " <b> 1. </b> "
 
 - **Tuần 3:** [Lưu trữ và Cơ sở dữ liệu](1.03-week03/)
 
-- **Tuần 4:** [Tăng cường mở rộng và Phân phối nội dung](1.04-week04/)
+- **Tuần 4:** [Mở rộng quy mô và Phân phối nội dung](1.04-week04/)
 
 - **Tuần 5:** [Tự động hóa, IaC và CI/CD](1.05-week05/)
 
@@ -23,7 +23,7 @@ pre: " <b> 1. </b> "
 
 - **Tuần 8:** [Mạng và Kết nối](1.08-week08/)
 
-- **Tuần 9:** [Serverless và Kiến trúc theo sự kiện](1.09-week09/)
+- **Tuần 9:** [Serverless và Kiến trúc hướng sự kiện](1.09-week09/)
 
 - **Tuần 10:** [Dịch vụ dữ liệu và Phân tích](1.10-week10/)
 

@@ -1,5 +1,5 @@
 ---
-title: "Tự động mở rộng và Phân phối nội dung"
+title: "Mở rộng quy mô và Phân phối nội dung"
 date: 2026-04-20
 draft: false
 weight: 4

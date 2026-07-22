@@ -5,7 +5,6 @@ draft: false
 weight: 1
 chapter: false
 pre: " <b> Tuần 01: </b> "
-
 ---
 
 ## Mục tiêu
